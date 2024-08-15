@@ -145,7 +145,7 @@ class TransformerBlock(tf.keras.layers.Layer):
                 ),
                 tf.keras.layers.Lambda(
                     lambda x: tf.keras.activations.gelu(x, approximate=False)
-                )
+                ),
                 #if hasattr(tf.keras.activations, "gelu")
                 #else tf.keras.layers.Lambda(
                 #    lambda x: tfa.activations.gelu(x, approximate=False)
